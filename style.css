@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+#bodao {
+    background: linear-gradient(360deg, #f8e0b8, #d7f7ce, #dff1ff);
+}
+h1 {
+  text-align: center;
+  color: #006d77;
+  margin-bottom: 30px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-fcs {
+  max-width: 120px;
+  height: auto;
+}
+
+form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #096659;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #006d77;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.sexo-horizontal {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sexo-horizontal > label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+  color: #006d77;
+}
+
+.radio-group.horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #006d77;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked::before,
+input[type="checkbox"]:checked::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #006d77;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #006d77;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #004e54;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #c4e2f7;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f8fe;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.btn-abrir {
+  background-color: #2ba7b2;
+  color: white;
+}
+
+.btn-editar {
+  background-color: #c2de26;
+  color: white;
+}
+
+.btn-editar img,
+.btn-excluir img {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-excluir {
+  background-color: #e4782f;
+  color: white;
+}
+
+.secao {
+  display: grid;
+  gap: 16px;
+}
+
+.secao.dados-pessoais {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.secao.certidao-nascimento {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.secao.endereco {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.secao.endereco > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.secao.saude-assistencia {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.telefone {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: #e6f2fa;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.secao.transporte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.secao.observacoes textarea {
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  label {
+    margin-top: 8px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .radio-label,
+  .checkbox-label {
+    flex-wrap: wrap;
+  }
+
+  .secao {
+    display: block;
+  }
+
+  .secao.endereco > div {
+    width: 100%;
+  }
+
+  .telefone {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .btn-editar img,
+.btn-excluir img {
+    gap: 100px;
+}
+}

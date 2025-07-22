@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ficha da Criança</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body id="bodao">
+    <h1>Ficha de Cadastro da Criança</h1>
+    <form action="#" method="post">
+  
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <div class="secao dados-pessoais">
+          <div>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required />
+            <label for="nome_pai">Nome do pai (se houver)</label>
+            <input type="text" id="nome_pai" name="nome_pai" />
+            <label for="nome_mae">Nome da mãe (se houver)</label>
+            <input type="text" id="nome_mae" name="nome_mae" />
+            <label for="ano_escolar">Ano escolar</label>
+            <input type="text" id="ano_escolar" name="ano_escolar" />
+          </div>
+          <div>
+            <label for="data_nascimento">Data de nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required />
+            <label for="naturalidade">Naturalidade</label>
+            <input type="text" id="naturalidade" name="naturalidade" />
+            <label for="nis">NIS </label>
+            <input type="text" id="nis" name="nis" />
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" />
+          </div>
+          <div>
+            <label for="escola">Escola</label>
+            <input type="text" id="escola" name="escola" />
+            <label for="contato_pa">Contatode parente ou amigo (P/A)</label>
+            <input type="text" id="contato_pa" name="contato_pa" />
+            <label for="contato_crianca">Contato da criança (opcional)</label>
+            <input type="text" id="contato_crianca" name="contato_crianca" />
+          </div>
+         
+        </div>
+      
+        <div class="sexo-horizontal">
+          <label>Gênero</label>
+          <div class="radio-group horizontal">
+            <label class="radio-label"><input type="radio" name="sexo" value="feminino"> Feminino</label>
+            <label class="radio-label"><input type="radio" name="sexo" value="masculino"> Masculino</label>
+            <label class="radio-label"><input type="radio" name="sexo" value="outro"> Outro</label>
+          </div>
+        </div>
+
+      </fieldset>
+      
+  
+      <!-- Dados do Atendimento -->
+      <fieldset>
+        <legend>Dados do Atendimento</legend>
+        <div class="secao.certidao-nascimento">
+          <div>
+            <label for="grupo">Grupo</label>
+            <input type="text" id="grupo" name="grupo" />
+  
+            <label for="turno">Turno</label>
+            <select id="turno" name="turno">
+              <option value="">-- Selecione --</option>
+              <option value="manha">Manhã</option>
+              <option value="tarde">Tarde</option>
+            </select>
+          </div>
+          <div>
+            <label for="data_ingresso">Data de ingresso</label>
+            <input type="date" id="data_ingresso" name="data_ingresso" />
+  
+            <label for="encaminhamento">Encaminhamento</label>
+            <input type="text" id="encaminhamento" name="encaminhamento" />
+          </div>
+        </div>
+      </fieldset>
+  
+      <!-- Acompanhamento Familiar -->
+      <fieldset>
+        <legend>Acompanhamento Familiar</legend>
+        <div class="secao dados-pessoais">
+          <div>
+            <label>Família é acompanhada pela rede:</label>
+            <label class="checkbox-label"><input type="checkbox" name="rede_ct" value="CT"> CT</label>
+            <label class="checkbox-label"><input type="checkbox" name="rede_cras" value="CRAS"> CRAS</label>
+            <label class="checkbox-label"><input type="checkbox" name="rede_creas" value="CREAS"> CREAS</label>
+            <label class="checkbox-label"><input type="checkbox" name="rede_cpasi" value="CPASI"> CPASI</label>
+            <label class="checkbox-label"><input type="checkbox" name="rede_crvvs" value="CRVVS"> CRVVS</label>
+            <label class="checkbox-label"><input type="checkbox" name="rede_outro" value="Outro"> Outro</label>
+            <input type="text" id="rede_outro_desc" name="rede_outro_desc" placeholder="Qual?" />
+          </div>
+          <div>
+            <label for="nome_usuario">Nome do usuário</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" />
+  
+            <label for="sexo_usuario">Sexo</label>
+            <select id="sexo_usuario" name="sexo_usuario">
+              <option value="">-- Selecione --</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+            </select>
+            <label for="institucionalizado_desde">Desde quando?</label>
+            <input type="date" id="institucionalizado_desde" name="institucionalizado_desde" />
+          </div>
+          <div>
+            <label for="deficiencia">Possui algum tipo de deficiência?</label>
+            <select id="deficiencia" name="deficiencia">
+              <option value="">-- Selecione --</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+  
+            <label for="deficiencia_qual">Qual?</label>
+            <input type="text" id="deficiencia_qual" name="deficiencia_qual" />
+  
+            <label for="institucionalizado">Institucionalizado?</label>
+            <select id="institucionalizado" name="institucionalizado">
+              <option value="">-- Selecione --</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+  
+          </div>
+        </div>
+        <div class="secao dados-pessoais" style="margin-top: 20px;">
+          <div>
+            <label for="qual_ar">Qual AR?</label>
+            <input type="text" id="qual_ar" name="qual_ar" />
+          </div>
+          <div>
+            <label for="contato_ar">Contato AR (telefone fixo e celular)</label>
+            <input type="text" id="contato_ar" name="contato_ar" />
+          </div>
+          <div>
+            <label for="equipe_tecnica">Equipe técnica</label>
+            <input type="text" id="equipe_tecnica" name="equipe_tecnica" placeholder="Assistente Social, Coordenador AR, Psicóloga" />
+          </div>
+        </div>
+      </fieldset>
+  
+      <!-- Contatos e Responsáveis -->
+      <fieldset>
+        <legend>Contatos e Responsáveis</legend>
+        <div class="secao dados-pessoais">
+          <div>
+            <label for="outros_atendimentos">Espaço com outros atendimentos</label>
+            <input type="text" id="outros_atendimentos" name="outros_atendimentos" />
+            <label for="tempo_moradia">Tempo de moradia</label>
+            <input type="text" id="tempo_moradia" name="tempo_moradia" />
+          </div>
+          <div>
+            <label for="contato_celular">Contato celular</label>
+            <input type="text" id="contato_celular" name="contato_celular" />
+            <label for="ponto_referencia">Ponto de referência</label>
+            <input type="text" id="ponto_referencia" name="ponto_referencia" />
+            
+          </div>
+          <div>
+            <label for="whatsapp">WhatsApp</label>
+            <input type="text" id="whatsapp" name="whatsapp" />
+  
+            <label for="endereco_residencial">Endereço residencial</label>
+            <select id="endereco_residencial" name="endereco_residencial">
+              <option value="">-- Selecione --</option>
+              <option value="proprio">Próprio</option>
+              <option value="aluguel">Aluguel</option>
+              <option value="cedido">Cedido</option>
+            </select>
+          </div>
+
+          <div class="telefone">
+            <label for="telefones_adicionais">Telefones adicionais</label>
+            <input type="text" id="telefones_adicionais" name="telefones_adicionais" />
+          </div>
+            
+        </div>
+       
+      </fieldset>
+  
+      <!-- Constituição Familiar -->
+      <fieldset>
+        <legend>Constituição Familiar</legend>
+        <div class="secao dados-pessoais">
+          <div>
+            <label for="pais_moram_juntos">Pais moram juntos?</label>
+            <select id="pais_moram_juntos" name="pais_moram_juntos">
+              <option value="">-- Selecione --</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+  
+            <label for="reside_com">Com quem reside?</label>
+            <select id="reside_com" name="reside_com">
+              <option value="">-- Selecione --</option>
+              <option value="mae">Mãe</option>
+              <option value="pai">Pai</option>
+              <option value="ambos">Ambos</option>
+              <option value="outros">Outros</option>
+            </select>
+            <label for="reside_com"> Outros? Quem?</label>
+            <input type="text" id="reside_com" name="reside_com" />
+            <label for="fam_nome1">Nome</label>
+            <input type="text" id="fam_nome1" name="fam_nome1" />
+          </div>
+          <div>
+            
+            <!-- Para entrada repetível, você pode adaptar depois para JS, aqui exemplo fixo com 2 entradas -->
+            
+            <label for="fam_vinculo1">Vínculo</label>
+            <input type="text" id="fam_vinculo1" name="fam_vinculo1" />
+            <label for="fam_data_nasc1">Data de nascimento</label>
+            <input type="date" id="fam_data_nasc1" name="fam_data_nasc1" />
+            <label for="fam_estado_civil1">Estado civil</label>
+            <input type="text" id="fam_estado_civil1" name="fam_estado_civil1" />
+            <label for="fam_escolaridade1">Escolaridade</label>
+            <input type="text" id="fam_escolaridade1" name="fam_escolaridade1" />
+            </div>
+            <div>
+            <label for="fam_ocupacao1">Ocupação profissional</label>
+            <input type="text" id="fam_ocupacao1" name="fam_ocupacao1" />
+            <label for="fam_renda1">Renda</label>
+            <input type="text" id="fam_renda1" name="fam_renda1" />
+  
+            <label for="fam_programa1">Está em algum programa da rede?</label>
+            <input type="text" id="fam_programa1" name="fam_programa1" />
+            <label for="fam_valor_rendimento1">Valor dos rendimentos R$</label>
+            <input type="number" id="fam_valor_rendimento1" name="fam_valor_rendimento1" step="0.01" />
+          </div>
+        </div>
+      </fieldset>
+  
+      <!-- Transporte e Acompanhamento -->
+      <fieldset>
+        <legend>Transporte e Acompanhamento</legend>
+        <div class="secao dados-pessoais">
+          <div>
+  
+            <label for="nome_acompanhante">Alguém acompanha a criança? </label>
+                
+                <select id="nome_acompanhante" name="nome_acompanhante">
+                  <option value="">-- Selecione --</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+
+            <label for="nome_acompanhante">Nome Acompanhante</label>
+            <input type="text" id="nome_acompanhante" name="nome_acompanhante" />
+          </div>
+          <div>
+            <label for="celular_acompanhante">Celular</label>
+            <input type="text" id="celular_acompanhante" name="celular_acompanhante" />
+  
+            <label for="endereco_acompanhante">Endereço</label>
+            <input type="text" id="endereco_acompanhante" name="endereco_acompanhante" />
+          </div>
+          
+          <div>
+            <label for="tipo_deslocamento">Tipo de deslocamento</label>
+            <select id="tipo_deslocamento" name="tipo_deslocamento">
+              <option value="">-- Selecione --</option>
+              <option value="prefeitura">Prefeitura</option>
+              <option value="particular">Particular</option>
+              <option value="autonomo">Autônomo</option>
+            </select>
+            <label for="programas_sociais">Programas sociais</label>
+            <input type="text" id="programas_sociais" name="programas_sociais" placeholder="BF / PETI / BPC / Outros (R$)" />
+          </div>
+        </div>
+      </fieldset>
+  
+      <!-- Saúde -->
+      <fieldset>
+        <legend>Saúde</legend>
+        <div class="secao dados-pessoais">
+          
+          <div>
+            <label for="uso_medicacao">Uso de medicação? Qual?</label>
+            <input type="text" id="uso_medicacao" name="uso_medicacao" />
+          </div>
+          <div>
+            <label for="faz_acompanhamento">Faz acompanhamento?</label>
+            <select id="faz_acompanhamento" name="faz_acompanhamento">
+              <option value="">-- Selecione --</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+            </div>
+            <div>
+            <label for="onde_acompanhamento">Onde?</label>
+            <input type="text" id="onde_acompanhamento" name="onde_acompanhamento" />
+          </div>
+        </div>
+        <div>
+            <label for="condicoes_saude">Condições de saúde</label>
+            <input type="text" id="condicoes_saude" name="condicoes_saude" />
+          </div>
+      </fieldset>
+  
+      <!-- Autorizações -->
+      <fieldset>
+        <legend>Autorizações</legend>
+        <div class="secao dados-pessoais">
+          <div>
+            <label>Autorizo ser fotografado/filmado</label>
+            <label class="radio-label"><input type="radio" name="aut_foto" value="sim" required> Sim</label>
+            <label class="radio-label"><input type="radio" name="aut_foto" value="nao"> Não</label>
+          </div>
+          <div>
+            <label>Autorizo participar das atividades da FCS</label>
+            <label class="radio-label"><input type="radio" name="aut_participar" value="sim" required> Sim</label>
+            <label class="radio-label"><input type="radio" name="aut_participar" value="nao"> Não</label>
+          </div>
+          <div>
+            <label>Autorizo deslocamento sozinho para a FCS</label>
+            <label class="radio-label"><input type="radio" name="aut_deslocamento" value="sim" required> Sim</label>
+            <label class="radio-label"><input type="radio" name="aut_deslocamento" value="nao"> Não</label>
+          </div>
+        </div>
+      </fieldset>
+  
+      <!-- Documentação -->
+      <fieldset>
+        <legend>Documentação</legend>
+        <div class="secao dados-pessoais">
+          <div>
+            <label for="nome_responsavel">Nome do responsável</label>
+            <input type="text" id="nome_responsavel" name="nome_responsavel" />
+            <label for="parentesco">Parentesco</label>
+            <input type="text" id="parentesco" name="parentesco" />
+          </div>
+          <div>
+            <label for="doc_responsavel">Documento + telefone fixo/celular</label>
+            <input type="text" id="doc_responsavel" name="doc_responsavel" />
+            <label for="docs_entregues">Documentos entregues</label>
+            <input type="text" id="docs_entregues" name="docs_entregues" placeholder="identidade / comprovante de endereço / matrícula escolar" />
+          </div>
+          <div>
+            <label for="doc_pendente_prazo">Caso haja documento pendente, prazo de entrega (78h)</label>
+            <input type="text" id="doc_pendente_prazo" name="doc_pendente_prazo" />
+          </div>
+        </div>
+      </fieldset>
+  
+      <!-- Termo de Compromisso -->
+      <fieldset>
+        <legend>Termo de Compromisso</legend>
+        <div class="secao observacoes">
+          <label for="termo_compromisso">Participação regular nas atividades, comunicar alterações nos dados e participar das reuniões e atividades.</label>
+          <textarea id="termo_compromisso" name="termo_compromisso" rows="3" placeholder="Declaro estar ciente..."></textarea>
+          <label for="assinatura">Assinatura</label>
+          <input type="text" id="assinatura" name="assinatura" />
+          <label for="data_assinatura">Data</label>
+          <input type="date" id="data_assinatura" name="data_assinatura" />
+        </div>
+      </fieldset>
+  
+      <!-- Desistência -->
+      <fieldset>
+        <legend>Desistência</legend>
+        <div class="secao observacoes">
+          <label for="motivo_saida">Motivo para saída do serviço</label>
+          <textarea id="motivo_saida" name="motivo_saida" rows="3"></textarea>
+          <label for="obs_importantes">Observações importantes</label>
+          <textarea id="obs_importantes" name="obs_importantes" rows="3"></textarea>
+        </div>
+      </fieldset>
+  
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+  
+</html>
