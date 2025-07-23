@@ -222,6 +222,26 @@ tr:nth-child(even) {
   color: white;
 }
 
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: 100%;
+  }
+  
+  #tabela-criancas {
+    min-width: 700px; 
+  }
+  
+  .tabela-container::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .tabela-container::-webkit-scrollbar-thumb {
+    background-color: #a6a8a9;
+    border-radius: 5px;
+  }  
+
 .secao {
   display: grid;
   gap: 16px;
