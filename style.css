@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,7 +32,7 @@ h1 {
 }
 
 .logo-fcs {
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -272,6 +273,72 @@ tr:nth-child(even) {
   width: 100%;
 }
 
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(42, 41, 41);
+}
+
+.footer-atrian {
+    background: linear-gradient(to bottom, #fdfdfd, #f4f4f4);
+    padding: 40px 5%;
+    font-family: "Questrial", sans-serif;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-contact a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #007BFF;
+    transform: scale(1.05);
+}
+
+.footer-social a img {
+    height: 30px;
+    margin: 10px 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-social a:hover {
+    opacity: 0.8;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   form {
@@ -309,5 +376,23 @@ tr:nth-child(even) {
   .btn-editar img,
 .btn-excluir img {
     gap: 100px;
+}
+
+.footer-social {
+    margin: auto;
+    text-align: center;
+    padding-right: 0;
+}
+
+.footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 }
