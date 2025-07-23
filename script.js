@@ -1,4 +1,3 @@
-// Lista simulada de crianças
 const criancas = [
     {
       nome: "Lucas da Silva Rocha",
@@ -86,7 +85,6 @@ const criancas = [
       }
     });
   
-    // Exibir campo personalizado para opções "Outro"
     const outros = document.querySelectorAll("input[type='radio'][value='Outro'], input[type='checkbox'][value='Outro']");
   
     outros.forEach(opcao => {
